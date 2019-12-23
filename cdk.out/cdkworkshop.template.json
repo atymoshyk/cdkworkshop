@@ -1,6 +1,564 @@
 {
+  "Transform": "AWS::Serverless-2016-10-31",
   "Resources": {
-    "HelloHandlerServiceRole11EF7C63": {
+    "andriitestcdkclusterDefaultVpcC6C89646": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/16",
+        "EnableDnsHostnames": true,
+        "EnableDnsSupport": true,
+        "InstanceTenancy": "default",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/Resource"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPublicSubnet1Subnet0BE01C5B": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/18",
+        "VpcId": {
+          "Ref": "andriitestcdkclusterDefaultVpcC6C89646"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            0,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Public"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1/Subnet"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPublicSubnet1RouteTable2B47592D": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "andriitestcdkclusterDefaultVpcC6C89646"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1/RouteTable"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPublicSubnet1RouteTableAssociationE850C676": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPublicSubnet1RouteTable2B47592D"
+        },
+        "SubnetId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPublicSubnet1Subnet0BE01C5B"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1/RouteTableAssociation"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPublicSubnet1DefaultRouteB5EF537B": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPublicSubnet1RouteTable2B47592D"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "andriitestcdkclusterDefaultVpcIGWE95C7D28"
+        }
+      },
+      "DependsOn": [
+        "andriitestcdkclusterDefaultVpcVPCGWFCB49DFB"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1/DefaultRoute"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPublicSubnet1EIPCF314A1E": {
+      "Type": "AWS::EC2::EIP",
+      "Properties": {
+        "Domain": "vpc",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1/EIP"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPublicSubnet1NATGatewayF2310259": {
+      "Type": "AWS::EC2::NatGateway",
+      "Properties": {
+        "AllocationId": {
+          "Fn::GetAtt": [
+            "andriitestcdkclusterDefaultVpcPublicSubnet1EIPCF314A1E",
+            "AllocationId"
+          ]
+        },
+        "SubnetId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPublicSubnet1Subnet0BE01C5B"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1/NATGateway"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPublicSubnet2SubnetEC0A2CEE": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.64.0/18",
+        "VpcId": {
+          "Ref": "andriitestcdkclusterDefaultVpcC6C89646"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            1,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Public"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2/Subnet"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPublicSubnet2RouteTableA3B76B64": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "andriitestcdkclusterDefaultVpcC6C89646"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2/RouteTable"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPublicSubnet2RouteTableAssociationC07F9998": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPublicSubnet2RouteTableA3B76B64"
+        },
+        "SubnetId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPublicSubnet2SubnetEC0A2CEE"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2/RouteTableAssociation"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPublicSubnet2DefaultRouteC80C4C0A": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPublicSubnet2RouteTableA3B76B64"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "andriitestcdkclusterDefaultVpcIGWE95C7D28"
+        }
+      },
+      "DependsOn": [
+        "andriitestcdkclusterDefaultVpcVPCGWFCB49DFB"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2/DefaultRoute"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPublicSubnet2EIPD77912AE": {
+      "Type": "AWS::EC2::EIP",
+      "Properties": {
+        "Domain": "vpc",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2/EIP"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPublicSubnet2NATGateway7EB72170": {
+      "Type": "AWS::EC2::NatGateway",
+      "Properties": {
+        "AllocationId": {
+          "Fn::GetAtt": [
+            "andriitestcdkclusterDefaultVpcPublicSubnet2EIPD77912AE",
+            "AllocationId"
+          ]
+        },
+        "SubnetId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPublicSubnet2SubnetEC0A2CEE"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2/NATGateway"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPrivateSubnet1Subnet1C698E2E": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.128.0/18",
+        "VpcId": {
+          "Ref": "andriitestcdkclusterDefaultVpcC6C89646"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            0,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet1"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Private"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Private"
+          },
+          {
+            "Key": "kubernetes.io/role/internal-elb",
+            "Value": "1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet1/Subnet"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPrivateSubnet1RouteTable8E53ACD7": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "andriitestcdkclusterDefaultVpcC6C89646"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet1"
+          },
+          {
+            "Key": "kubernetes.io/role/internal-elb",
+            "Value": "1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet1/RouteTable"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPrivateSubnet1RouteTableAssociation25DC0A88": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPrivateSubnet1RouteTable8E53ACD7"
+        },
+        "SubnetId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPrivateSubnet1Subnet1C698E2E"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet1/RouteTableAssociation"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPrivateSubnet1DefaultRoute4FB1DF69": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPrivateSubnet1RouteTable8E53ACD7"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "NatGatewayId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPublicSubnet1NATGatewayF2310259"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet1/DefaultRoute"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPrivateSubnet2Subnet358140D5": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.192.0/18",
+        "VpcId": {
+          "Ref": "andriitestcdkclusterDefaultVpcC6C89646"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            1,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet2"
+          },
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Private"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Private"
+          },
+          {
+            "Key": "kubernetes.io/role/internal-elb",
+            "Value": "1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet2/Subnet"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPrivateSubnet2RouteTable1FA1FAD1": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "andriitestcdkclusterDefaultVpcC6C89646"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet2"
+          },
+          {
+            "Key": "kubernetes.io/role/internal-elb",
+            "Value": "1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet2/RouteTable"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPrivateSubnet2RouteTableAssociationEB170F2F": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPrivateSubnet2RouteTable1FA1FAD1"
+        },
+        "SubnetId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPrivateSubnet2Subnet358140D5"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet2/RouteTableAssociation"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcPrivateSubnet2DefaultRoute0BACBF87": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPrivateSubnet2RouteTable1FA1FAD1"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "NatGatewayId": {
+          "Ref": "andriitestcdkclusterDefaultVpcPublicSubnet2NATGateway7EB72170"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet2/DefaultRoute"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcIGWE95C7D28": {
+      "Type": "AWS::EC2::InternetGateway",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/IGW"
+      }
+    },
+    "andriitestcdkclusterDefaultVpcVPCGWFCB49DFB": {
+      "Type": "AWS::EC2::VPCGatewayAttachment",
+      "Properties": {
+        "VpcId": {
+          "Ref": "andriitestcdkclusterDefaultVpcC6C89646"
+        },
+        "InternetGatewayId": {
+          "Ref": "andriitestcdkclusterDefaultVpcIGWE95C7D28"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/VPCGW"
+      }
+    },
+    "andriitestcdkclusterClusterRole2C54D79C": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "eks.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AmazonEKSClusterPolicy"
+              ]
+            ]
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AmazonEKSServicePolicy"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/ClusterRole/Resource"
+      }
+    },
+    "andriitestcdkclusterControlPlaneSecurityGroup630E4DAE": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "EKS Control Plane Security Group",
+        "SecurityGroupEgress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "Allow all outbound traffic by default",
+            "IpProtocol": "-1"
+          }
+        ],
+        "VpcId": {
+          "Ref": "andriitestcdkclusterDefaultVpcC6C89646"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/ControlPlaneSecurityGroup/Resource"
+      }
+    },
+    "andriitestcdkclusterControlPlaneSecurityGroupfromcdkworkshopandriitestcdkclusterfrontendnodesInstanceSecurityGroupF972C617443CFF56A15": {
+      "Type": "AWS::EC2::SecurityGroupIngress",
+      "Properties": {
+        "IpProtocol": "tcp",
+        "Description": "from cdkworkshopandriitestcdkclusterfrontendnodesInstanceSecurityGroupF972C617:443",
+        "FromPort": 443,
+        "GroupId": {
+          "Fn::GetAtt": [
+            "andriitestcdkclusterControlPlaneSecurityGroup630E4DAE",
+            "GroupId"
+          ]
+        },
+        "SourceSecurityGroupId": {
+          "Fn::GetAtt": [
+            "andriitestcdkclusterfrontendnodesInstanceSecurityGroup95373D4D",
+            "GroupId"
+          ]
+        },
+        "ToPort": 443
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/ControlPlaneSecurityGroup/from cdkworkshopandriitestcdkclusterfrontendnodesInstanceSecurityGroupF972C617:443"
+      }
+    },
+    "andriitestcdkclusterResourceHandlerServiceRoleF8722E30": {
       "Type": "AWS::IAM::Role",
       "Properties": {
         "AssumeRolePolicyDocument": {
@@ -31,15 +589,54 @@
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "cdkworkshop/HelloHandler/ServiceRole/Resource"
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/Resource/ResourceHandler/ServiceRole/Resource"
       }
     },
-    "HelloHandler2E4FBA4D": {
+    "andriitestcdkclusterResourceHandlerServiceRoleDefaultPolicyE30665F1": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "eks:CreateCluster",
+                "eks:DescribeCluster",
+                "eks:DeleteCluster",
+                "eks:UpdateClusterVersion"
+              ],
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Action": "iam:PassRole",
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "andriitestcdkclusterClusterRole2C54D79C",
+                  "Arn"
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "andriitestcdkclusterResourceHandlerServiceRoleDefaultPolicyE30665F1",
+        "Roles": [
+          {
+            "Ref": "andriitestcdkclusterResourceHandlerServiceRoleF8722E30"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/Resource/ResourceHandler/ServiceRole/DefaultPolicy/Resource"
+      }
+    },
+    "andriitestcdkclusterResourceHandler325E7954": {
       "Type": "AWS::Lambda::Function",
       "Properties": {
         "Code": {
           "S3Bucket": {
-            "Ref": "AssetParameters37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931S3BucketAA69DD97"
+            "Ref": "AssetParametersea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204S3Bucket371D99F8"
           },
           "S3Key": {
             "Fn::Join": [
@@ -52,7 +649,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "AssetParameters37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931S3VersionKey1FAC1E15"
+                          "Ref": "AssetParametersea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204S3VersionKeyFDCB25DD"
                         }
                       ]
                     }
@@ -65,7 +662,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "AssetParameters37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931S3VersionKey1FAC1E15"
+                          "Ref": "AssetParametersea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204S3VersionKeyFDCB25DD"
                         }
                       ]
                     }
@@ -75,66 +672,270 @@
             ]
           }
         },
-        "Handler": "hello.handler",
+        "Handler": "index.handler",
         "Role": {
           "Fn::GetAtt": [
-            "HelloHandlerServiceRole11EF7C63",
+            "andriitestcdkclusterResourceHandlerServiceRoleF8722E30",
             "Arn"
           ]
         },
-        "Runtime": "python3.7"
+        "Runtime": "python3.7",
+        "Layers": [
+          {
+            "Fn::GetAtt": [
+              "kubectllayer8C2542BCBF2B4DFEB765E181FD30A9A0617C4ADA",
+              "Outputs.LayerVersionArn"
+            ]
+          }
+        ],
+        "MemorySize": 512,
+        "Timeout": 900
       },
       "DependsOn": [
-        "HelloHandlerServiceRole11EF7C63"
+        "andriitestcdkclusterResourceHandlerServiceRoleDefaultPolicyE30665F1",
+        "andriitestcdkclusterResourceHandlerServiceRoleF8722E30"
       ],
       "Metadata": {
-        "aws:cdk:path": "cdkworkshop/HelloHandler/Resource",
-        "aws:asset:path": "asset.37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931",
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/Resource/ResourceHandler/Resource",
+        "aws:asset:path": "asset.ea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204",
         "aws:asset:property": "Code"
       }
     },
-    "EndpointEEF1FD8F": {
-      "Type": "AWS::ApiGateway::RestApi",
+    "andriitestcdkclusterB50B650B": {
+      "Type": "Custom::AWSCDK-EKS-Cluster",
       "Properties": {
-        "Name": "Endpoint"
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "andriitestcdkclusterResourceHandler325E7954",
+            "Arn"
+          ]
+        },
+        "Config": {
+          "roleArn": {
+            "Fn::GetAtt": [
+              "andriitestcdkclusterClusterRole2C54D79C",
+              "Arn"
+            ]
+          },
+          "resourcesVpcConfig": {
+            "securityGroupIds": [
+              {
+                "Fn::GetAtt": [
+                  "andriitestcdkclusterControlPlaneSecurityGroup630E4DAE",
+                  "GroupId"
+                ]
+              }
+            ],
+            "subnetIds": [
+              {
+                "Ref": "andriitestcdkclusterDefaultVpcPublicSubnet1Subnet0BE01C5B"
+              },
+              {
+                "Ref": "andriitestcdkclusterDefaultVpcPublicSubnet2SubnetEC0A2CEE"
+              },
+              {
+                "Ref": "andriitestcdkclusterDefaultVpcPrivateSubnet1Subnet1C698E2E"
+              },
+              {
+                "Ref": "andriitestcdkclusterDefaultVpcPrivateSubnet2Subnet358140D5"
+              }
+            ]
+          }
+        }
       },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
       "Metadata": {
-        "aws:cdk:path": "cdkworkshop/Endpoint/Resource"
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/Resource/Resource/Default"
       }
     },
-    "EndpointDeployment318525DA6e6bb40c1d6561ba7c15aba7abb291aa": {
-      "Type": "AWS::ApiGateway::Deployment",
+    "andriitestcdkclusterKubernetesResourceHandlerA4A5AF7E": {
+      "Type": "AWS::Lambda::Function",
       "Properties": {
-        "RestApiId": {
-          "Ref": "EndpointEEF1FD8F"
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParameters640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444S3Bucket919126CB"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444S3VersionKey529BEF54"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444S3VersionKey529BEF54"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
         },
-        "Description": "Automatically created by the RestApi construct"
+        "Handler": "index.handler",
+        "Role": {
+          "Fn::GetAtt": [
+            "andriitestcdkclusterResourceHandlerServiceRoleF8722E30",
+            "Arn"
+          ]
+        },
+        "Runtime": "python3.7",
+        "Environment": {
+          "Variables": {
+            "CLUSTER_NAME": {
+              "Ref": "andriitestcdkclusterB50B650B"
+            }
+          }
+        },
+        "Layers": [
+          {
+            "Fn::GetAtt": [
+              "kubectllayer8C2542BCBF2B4DFEB765E181FD30A9A0617C4ADA",
+              "Outputs.LayerVersionArn"
+            ]
+          }
+        ],
+        "MemorySize": 256,
+        "Timeout": 900
       },
       "DependsOn": [
-        "EndpointproxyANYC09721C5",
-        "Endpointproxy39E2174E",
-        "EndpointANY485C938B"
+        "andriitestcdkclusterResourceHandlerServiceRoleDefaultPolicyE30665F1",
+        "andriitestcdkclusterResourceHandlerServiceRoleF8722E30"
       ],
       "Metadata": {
-        "aws:cdk:path": "cdkworkshop/Endpoint/Deployment/Resource"
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/KubernetesResourceHandler/Resource",
+        "aws:asset:path": "asset.640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444",
+        "aws:asset:property": "Code"
       }
     },
-    "EndpointDeploymentStageprodB78BEEA0": {
-      "Type": "AWS::ApiGateway::Stage",
+    "andriitestcdkclusterfrontendnodesInstanceSecurityGroup95373D4D": {
+      "Type": "AWS::EC2::SecurityGroup",
       "Properties": {
-        "RestApiId": {
-          "Ref": "EndpointEEF1FD8F"
-        },
-        "DeploymentId": {
-          "Ref": "EndpointDeployment318525DA6e6bb40c1d6561ba7c15aba7abb291aa"
-        },
-        "StageName": "prod"
+        "GroupDescription": "cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/InstanceSecurityGroup",
+        "SecurityGroupEgress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "Allow all outbound traffic by default",
+            "IpProtocol": "-1"
+          }
+        ],
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/frontend-nodes"
+          },
+          {
+            "Key": {
+              "Fn::Join": [
+                "",
+                [
+                  "kubernetes.io/cluster/",
+                  {
+                    "Ref": "andriitestcdkclusterB50B650B"
+                  }
+                ]
+              ]
+            },
+            "Value": "owned"
+          }
+        ],
+        "VpcId": {
+          "Ref": "andriitestcdkclusterDefaultVpcC6C89646"
+        }
       },
       "Metadata": {
-        "aws:cdk:path": "cdkworkshop/Endpoint/DeploymentStage.prod/Resource"
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/InstanceSecurityGroup/Resource"
       }
     },
-    "EndpointCloudWatchRoleC3C64E0F": {
+    "andriitestcdkclusterfrontendnodesInstanceSecurityGroupfromcdkworkshopandriitestcdkclusterfrontendnodesInstanceSecurityGroupF972C617ALLTRAFFICBDA8231E": {
+      "Type": "AWS::EC2::SecurityGroupIngress",
+      "Properties": {
+        "IpProtocol": "-1",
+        "Description": "from cdkworkshopandriitestcdkclusterfrontendnodesInstanceSecurityGroupF972C617:ALL TRAFFIC",
+        "GroupId": {
+          "Fn::GetAtt": [
+            "andriitestcdkclusterfrontendnodesInstanceSecurityGroup95373D4D",
+            "GroupId"
+          ]
+        },
+        "SourceSecurityGroupId": {
+          "Fn::GetAtt": [
+            "andriitestcdkclusterfrontendnodesInstanceSecurityGroup95373D4D",
+            "GroupId"
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/InstanceSecurityGroup/from cdkworkshopandriitestcdkclusterfrontendnodesInstanceSecurityGroupF972C617:ALL TRAFFIC"
+      }
+    },
+    "andriitestcdkclusterfrontendnodesInstanceSecurityGroupfromcdkworkshopandriitestcdkclusterControlPlaneSecurityGroup8F8289314439702443D": {
+      "Type": "AWS::EC2::SecurityGroupIngress",
+      "Properties": {
+        "IpProtocol": "tcp",
+        "Description": "from cdkworkshopandriitestcdkclusterControlPlaneSecurityGroup8F828931:443",
+        "FromPort": 443,
+        "GroupId": {
+          "Fn::GetAtt": [
+            "andriitestcdkclusterfrontendnodesInstanceSecurityGroup95373D4D",
+            "GroupId"
+          ]
+        },
+        "SourceSecurityGroupId": {
+          "Fn::GetAtt": [
+            "andriitestcdkclusterControlPlaneSecurityGroup630E4DAE",
+            "GroupId"
+          ]
+        },
+        "ToPort": 443
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/InstanceSecurityGroup/from cdkworkshopandriitestcdkclusterControlPlaneSecurityGroup8F828931:443"
+      }
+    },
+    "andriitestcdkclusterfrontendnodesInstanceSecurityGroupfromcdkworkshopandriitestcdkclusterControlPlaneSecurityGroup8F82893110256553599519AC0": {
+      "Type": "AWS::EC2::SecurityGroupIngress",
+      "Properties": {
+        "IpProtocol": "tcp",
+        "Description": "from cdkworkshopandriitestcdkclusterControlPlaneSecurityGroup8F828931:1025-65535",
+        "FromPort": 1025,
+        "GroupId": {
+          "Fn::GetAtt": [
+            "andriitestcdkclusterfrontendnodesInstanceSecurityGroup95373D4D",
+            "GroupId"
+          ]
+        },
+        "SourceSecurityGroupId": {
+          "Fn::GetAtt": [
+            "andriitestcdkclusterControlPlaneSecurityGroup630E4DAE",
+            "GroupId"
+          ]
+        },
+        "ToPort": 65535
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/InstanceSecurityGroup/from cdkworkshopandriitestcdkclusterControlPlaneSecurityGroup8F828931:1025-65535"
+      }
+    },
+    "andriitestcdkclusterfrontendnodesInstanceRole10A6DB3D": {
       "Type": "AWS::IAM::Role",
       "Properties": {
         "AssumeRolePolicyDocument": {
@@ -143,7 +944,7 @@
               "Action": "sts:AssumeRole",
               "Effect": "Allow",
               "Principal": {
-                "Service": "apigateway.amazonaws.com"
+                "Service": "ec2.amazonaws.com"
               }
             }
           ],
@@ -158,321 +959,278 @@
                 {
                   "Ref": "AWS::Partition"
                 },
-                ":iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs"
+                ":iam::aws:policy/AmazonEKSWorkerNodePolicy"
               ]
             ]
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AmazonEKS_CNI_Policy"
+              ]
+            ]
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
+              ]
+            ]
+          }
+        ],
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/frontend-nodes"
+          },
+          {
+            "Key": {
+              "Fn::Join": [
+                "",
+                [
+                  "kubernetes.io/cluster/",
+                  {
+                    "Ref": "andriitestcdkclusterB50B650B"
+                  }
+                ]
+              ]
+            },
+            "Value": "owned"
           }
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "cdkworkshop/Endpoint/CloudWatchRole/Resource"
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/InstanceRole/Resource"
       }
     },
-    "EndpointAccountB8304247": {
-      "Type": "AWS::ApiGateway::Account",
+    "andriitestcdkclusterfrontendnodesInstanceProfile4F8B13C8": {
+      "Type": "AWS::IAM::InstanceProfile",
       "Properties": {
-        "CloudWatchRoleArn": {
-          "Fn::GetAtt": [
-            "EndpointCloudWatchRoleC3C64E0F",
-            "Arn"
-          ]
+        "Roles": [
+          {
+            "Ref": "andriitestcdkclusterfrontendnodesInstanceRole10A6DB3D"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/InstanceProfile"
+      }
+    },
+    "andriitestcdkclusterfrontendnodesLaunchConfig2AE09257": {
+      "Type": "AWS::AutoScaling::LaunchConfiguration",
+      "Properties": {
+        "ImageId": {
+          "Ref": "SsmParameterValueawsserviceeksoptimizedami114amazonlinux2recommendedimageidC96584B6F00A464EAD1953AFF4B05118Parameter"
+        },
+        "InstanceType": "t2.small",
+        "IamInstanceProfile": {
+          "Ref": "andriitestcdkclusterfrontendnodesInstanceProfile4F8B13C8"
+        },
+        "SecurityGroups": [
+          {
+            "Fn::GetAtt": [
+              "andriitestcdkclusterfrontendnodesInstanceSecurityGroup95373D4D",
+              "GroupId"
+            ]
+          }
+        ],
+        "UserData": {
+          "Fn::Base64": {
+            "Fn::Join": [
+              "",
+              [
+                "#!/bin/bash\nset -o xtrace\n/etc/eks/bootstrap.sh ",
+                {
+                  "Ref": "andriitestcdkclusterB50B650B"
+                },
+                " --kubelet-extra-args \"--node-labels lifecycle=OnDemand\" --use-max-pods true\n/opt/aws/bin/cfn-signal --exit-code $? --stack cdkworkshop --resource andriitestcdkclusterfrontendnodesASGB47ADD83 --region eu-west-1"
+              ]
+            ]
+          }
         }
       },
       "DependsOn": [
-        "EndpointEEF1FD8F"
+        "andriitestcdkclusterfrontendnodesInstanceRole10A6DB3D"
       ],
       "Metadata": {
-        "aws:cdk:path": "cdkworkshop/Endpoint/Account"
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/LaunchConfig"
       }
     },
-    "Endpointproxy39E2174E": {
-      "Type": "AWS::ApiGateway::Resource",
+    "andriitestcdkclusterfrontendnodesASGB47ADD83": {
+      "Type": "AWS::AutoScaling::AutoScalingGroup",
       "Properties": {
-        "ParentId": {
-          "Fn::GetAtt": [
-            "EndpointEEF1FD8F",
-            "RootResourceId"
-          ]
+        "MaxSize": "2",
+        "MinSize": "1",
+        "DesiredCapacity": "2",
+        "LaunchConfigurationName": {
+          "Ref": "andriitestcdkclusterfrontendnodesLaunchConfig2AE09257"
         },
-        "PathPart": "{proxy+}",
-        "RestApiId": {
-          "Ref": "EndpointEEF1FD8F"
-        }
-      },
-      "Metadata": {
-        "aws:cdk:path": "cdkworkshop/Endpoint/Default/{proxy+}/Resource"
-      }
-    },
-    "EndpointproxyANYApiPermissioncdkworkshopEndpointBFC3A9DCANYproxy8912C483": {
-      "Type": "AWS::Lambda::Permission",
-      "Properties": {
-        "Action": "lambda:InvokeFunction",
-        "FunctionName": {
-          "Fn::GetAtt": [
-            "HelloHandler2E4FBA4D",
-            "Arn"
-          ]
-        },
-        "Principal": "apigateway.amazonaws.com",
-        "SourceArn": {
-          "Fn::Join": [
-            "",
-            [
-              "arn:",
-              {
-                "Ref": "AWS::Partition"
-              },
-              ":execute-api:eu-west-1:",
-              {
-                "Ref": "AWS::AccountId"
-              },
-              ":",
-              {
-                "Ref": "EndpointEEF1FD8F"
-              },
-              "/",
-              {
-                "Ref": "EndpointDeploymentStageprodB78BEEA0"
-              },
-              "/*/{proxy+}"
-            ]
-          ]
-        }
-      },
-      "Metadata": {
-        "aws:cdk:path": "cdkworkshop/Endpoint/Default/{proxy+}/ANY/ApiPermission.cdkworkshopEndpointBFC3A9DC.ANY..{proxy+}"
-      }
-    },
-    "EndpointproxyANYApiPermissionTestcdkworkshopEndpointBFC3A9DCANYproxyED76C669": {
-      "Type": "AWS::Lambda::Permission",
-      "Properties": {
-        "Action": "lambda:InvokeFunction",
-        "FunctionName": {
-          "Fn::GetAtt": [
-            "HelloHandler2E4FBA4D",
-            "Arn"
-          ]
-        },
-        "Principal": "apigateway.amazonaws.com",
-        "SourceArn": {
-          "Fn::Join": [
-            "",
-            [
-              "arn:",
-              {
-                "Ref": "AWS::Partition"
-              },
-              ":execute-api:eu-west-1:",
-              {
-                "Ref": "AWS::AccountId"
-              },
-              ":",
-              {
-                "Ref": "EndpointEEF1FD8F"
-              },
-              "/test-invoke-stage/*/{proxy+}"
-            ]
-          ]
-        }
-      },
-      "Metadata": {
-        "aws:cdk:path": "cdkworkshop/Endpoint/Default/{proxy+}/ANY/ApiPermission.Test.cdkworkshopEndpointBFC3A9DC.ANY..{proxy+}"
-      }
-    },
-    "EndpointproxyANYC09721C5": {
-      "Type": "AWS::ApiGateway::Method",
-      "Properties": {
-        "HttpMethod": "ANY",
-        "ResourceId": {
-          "Ref": "Endpointproxy39E2174E"
-        },
-        "RestApiId": {
-          "Ref": "EndpointEEF1FD8F"
-        },
-        "AuthorizationType": "NONE",
-        "Integration": {
-          "IntegrationHttpMethod": "POST",
-          "Type": "AWS_PROXY",
-          "Uri": {
-            "Fn::Join": [
-              "",
-              [
-                "arn:",
-                {
-                  "Ref": "AWS::Partition"
-                },
-                ":apigateway:eu-west-1:lambda:path/2015-03-31/functions/",
-                {
-                  "Fn::GetAtt": [
-                    "HelloHandler2E4FBA4D",
-                    "Arn"
-                  ]
-                },
-                "/invocations"
+        "Tags": [
+          {
+            "Key": "Name",
+            "PropagateAtLaunch": true,
+            "Value": "cdkworkshop/andrii_test_cdk_cluster/frontend-nodes"
+          },
+          {
+            "Key": {
+              "Fn::Join": [
+                "",
+                [
+                  "kubernetes.io/cluster/",
+                  {
+                    "Ref": "andriitestcdkclusterB50B650B"
+                  }
+                ]
               ]
-            ]
+            },
+            "PropagateAtLaunch": true,
+            "Value": "owned"
           }
+        ],
+        "VPCZoneIdentifier": [
+          {
+            "Ref": "andriitestcdkclusterDefaultVpcPublicSubnet1Subnet0BE01C5B"
+          },
+          {
+            "Ref": "andriitestcdkclusterDefaultVpcPublicSubnet2SubnetEC0A2CEE"
+          }
+        ]
+      },
+      "UpdatePolicy": {
+        "AutoScalingRollingUpdate": {
+          "WaitOnResourceSignals": false,
+          "PauseTime": "PT0S",
+          "SuspendProcesses": [
+            "HealthCheck",
+            "ReplaceUnhealthy",
+            "AZRebalance",
+            "AlarmNotification",
+            "ScheduledActions"
+          ]
+        },
+        "AutoScalingScheduledAction": {
+          "IgnoreUnmodifiedGroupSizeProperties": true
         }
       },
       "Metadata": {
-        "aws:cdk:path": "cdkworkshop/Endpoint/Default/{proxy+}/ANY/Resource"
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/ASG"
       }
     },
-    "EndpointANYApiPermissioncdkworkshopEndpointBFC3A9DCANY43DD0A14": {
-      "Type": "AWS::Lambda::Permission",
+    "andriitestcdkclusterAwsAuthmanifest9764B19D": {
+      "Type": "Custom::AWSCDK-EKS-KubernetesResource",
       "Properties": {
-        "Action": "lambda:InvokeFunction",
-        "FunctionName": {
+        "ServiceToken": {
           "Fn::GetAtt": [
-            "HelloHandler2E4FBA4D",
+            "andriitestcdkclusterKubernetesResourceHandlerA4A5AF7E",
             "Arn"
           ]
         },
-        "Principal": "apigateway.amazonaws.com",
-        "SourceArn": {
+        "Manifest": {
           "Fn::Join": [
             "",
             [
-              "arn:",
+              "[{\"apiVersion\":\"v1\",\"kind\":\"ConfigMap\",\"metadata\":{\"name\":\"aws-auth\",\"namespace\":\"kube-system\"},\"data\":{\"mapRoles\":\"[{\\\"rolearn\\\":\\\"",
               {
-                "Ref": "AWS::Partition"
+                "Fn::GetAtt": [
+                  "andriitestcdkclusterfrontendnodesInstanceRole10A6DB3D",
+                  "Arn"
+                ]
               },
-              ":execute-api:eu-west-1:",
-              {
-                "Ref": "AWS::AccountId"
-              },
-              ":",
-              {
-                "Ref": "EndpointEEF1FD8F"
-              },
-              "/",
-              {
-                "Ref": "EndpointDeploymentStageprodB78BEEA0"
-              },
-              "/*/"
+              "\\\",\\\"username\\\":\\\"system:node:{{EC2PrivateDNSName}}\\\",\\\"groups\\\":[\\\"system:bootstrappers\\\",\\\"system:nodes\\\"]}]\",\"mapUsers\":\"[]\",\"mapAccounts\":\"[]\"}}]"
             ]
           ]
         }
       },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
       "Metadata": {
-        "aws:cdk:path": "cdkworkshop/Endpoint/Default/ANY/ApiPermission.cdkworkshopEndpointBFC3A9DC.ANY.."
+        "aws:cdk:path": "cdkworkshop/andrii_test_cdk_cluster/AwsAuth/manifest/Resource/Default"
       }
     },
-    "EndpointANYApiPermissionTestcdkworkshopEndpointBFC3A9DCANY2962C18A": {
-      "Type": "AWS::Lambda::Permission",
+    "kubectllayer8C2542BCBF2B4DFEB765E181FD30A9A0617C4ADA": {
+      "Type": "AWS::Serverless::Application",
       "Properties": {
-        "Action": "lambda:InvokeFunction",
-        "FunctionName": {
-          "Fn::GetAtt": [
-            "HelloHandler2E4FBA4D",
-            "Arn"
-          ]
+        "Location": {
+          "ApplicationId": "arn:aws:serverlessrepo:us-east-1:903779448426:applications/lambda-layer-kubectl",
+          "SemanticVersion": "1.13.7"
         },
-        "Principal": "apigateway.amazonaws.com",
-        "SourceArn": {
-          "Fn::Join": [
-            "",
-            [
-              "arn:",
-              {
-                "Ref": "AWS::Partition"
-              },
-              ":execute-api:eu-west-1:",
-              {
-                "Ref": "AWS::AccountId"
-              },
-              ":",
-              {
-                "Ref": "EndpointEEF1FD8F"
-              },
-              "/test-invoke-stage/*/"
-            ]
-          ]
+        "Parameters": {
+          "LayerName": "kubectl-ec290df0d91e0a792be1f6b6dda60b9d"
         }
       },
       "Metadata": {
-        "aws:cdk:path": "cdkworkshop/Endpoint/Default/ANY/ApiPermission.Test.cdkworkshopEndpointBFC3A9DC.ANY.."
+        "aws:cdk:path": "cdkworkshop/kubectl-layer-8C2542BC-BF2B-4DFE-B765-E181FD30A9A0/Resource"
       }
-    },
-    "EndpointANY485C938B": {
-      "Type": "AWS::ApiGateway::Method",
-      "Properties": {
-        "HttpMethod": "ANY",
-        "ResourceId": {
-          "Fn::GetAtt": [
-            "EndpointEEF1FD8F",
-            "RootResourceId"
-          ]
-        },
-        "RestApiId": {
-          "Ref": "EndpointEEF1FD8F"
-        },
-        "AuthorizationType": "NONE",
-        "Integration": {
-          "IntegrationHttpMethod": "POST",
-          "Type": "AWS_PROXY",
-          "Uri": {
-            "Fn::Join": [
-              "",
-              [
-                "arn:",
-                {
-                  "Ref": "AWS::Partition"
-                },
-                ":apigateway:eu-west-1:lambda:path/2015-03-31/functions/",
-                {
-                  "Fn::GetAtt": [
-                    "HelloHandler2E4FBA4D",
-                    "Arn"
-                  ]
-                },
-                "/invocations"
-              ]
-            ]
-          }
-        }
-      },
-      "Metadata": {
-        "aws:cdk:path": "cdkworkshop/Endpoint/Default/ANY/Resource"
-      }
-    }
-  },
-  "Parameters": {
-    "AssetParameters37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931S3BucketAA69DD97": {
-      "Type": "String",
-      "Description": "S3 bucket for asset \"37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931\""
-    },
-    "AssetParameters37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931S3VersionKey1FAC1E15": {
-      "Type": "String",
-      "Description": "S3 key for asset version \"37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931\""
-    },
-    "AssetParameters37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931ArtifactHash8E75A43E": {
-      "Type": "String",
-      "Description": "Artifact hash for asset \"37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931\""
     }
   },
   "Outputs": {
-    "Endpoint8024A810": {
+    "andriitestcdkclusterConfigCommand008D5CD0": {
       "Value": {
         "Fn::Join": [
           "",
           [
-            "https://",
+            "aws eks update-kubeconfig --name ",
             {
-              "Ref": "EndpointEEF1FD8F"
+              "Ref": "andriitestcdkclusterB50B650B"
             },
-            ".execute-api.eu-west-1.",
-            {
-              "Ref": "AWS::URLSuffix"
-            },
-            "/",
-            {
-              "Ref": "EndpointDeploymentStageprodB78BEEA0"
-            },
-            "/"
+            " --region eu-west-1"
           ]
         ]
       }
+    },
+    "andriitestcdkclusterGetTokenCommand1494FC90": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "aws eks get-token --cluster-name ",
+            {
+              "Ref": "andriitestcdkclusterB50B650B"
+            },
+            " --region eu-west-1"
+          ]
+        ]
+      }
+    }
+  },
+  "Parameters": {
+    "AssetParametersea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204S3Bucket371D99F8": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"ea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204\""
+    },
+    "AssetParametersea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204S3VersionKeyFDCB25DD": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"ea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204\""
+    },
+    "AssetParametersea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204ArtifactHashB80B497F": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"ea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204\""
+    },
+    "AssetParameters640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444S3Bucket919126CB": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444\""
+    },
+    "AssetParameters640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444S3VersionKey529BEF54": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444\""
+    },
+    "AssetParameters640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444ArtifactHash606C8127": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444\""
+    },
+    "SsmParameterValueawsserviceeksoptimizedami114amazonlinux2recommendedimageidC96584B6F00A464EAD1953AFF4B05118Parameter": {
+      "Type": "AWS::SSM::Parameter::Value<String>",
+      "Default": "/aws/service/eks/optimized-ami/1.14/amazon-linux-2/recommended/image_id"
     }
   }
 }

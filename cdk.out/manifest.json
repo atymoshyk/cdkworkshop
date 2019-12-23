@@ -18,19 +18,51 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931",
-              "id": "37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931",
+              "path": "asset.ea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204",
+              "id": "ea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204",
               "packaging": "zip",
-              "sourceHash": "37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931",
-              "s3BucketParameter": "AssetParameters37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931S3BucketAA69DD97",
-              "s3KeyParameter": "AssetParameters37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931S3VersionKey1FAC1E15",
-              "artifactHashParameter": "AssetParameters37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931ArtifactHash8E75A43E"
+              "sourceHash": "ea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204",
+              "s3BucketParameter": "AssetParametersea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204S3Bucket371D99F8",
+              "s3KeyParameter": "AssetParametersea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204S3VersionKeyFDCB25DD",
+              "artifactHashParameter": "AssetParametersea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204ArtifactHashB80B497F"
             },
             "trace": [
-              "Stack.addFileAsset (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/core/lib/stack.js:353:23)",
-              "new Asset (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
-              "AssetCode.bind (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
-              "new Function (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/core/lib/stack.js:353:23)",
+              "new Asset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "new ClusterResource (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster-resource.js:24:25)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:73:24)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444",
+              "id": "640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444",
+              "packaging": "zip",
+              "sourceHash": "640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444",
+              "s3BucketParameter": "AssetParameters640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444S3Bucket919126CB",
+              "s3KeyParameter": "AssetParameters640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444S3VersionKey529BEF54",
+              "artifactHashParameter": "AssetParameters640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444ArtifactHash606C8127"
+            },
+            "trace": [
+              "Stack.addFileAsset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/core/lib/stack.js:353:23)",
+              "new Asset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "Cluster.createKubernetesResourceHandler (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:259:16)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:96:41)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -44,13 +76,13 @@
             ]
           }
         ],
-        "/cdkworkshop/HelloHandler/ServiceRole/Resource": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "HelloHandlerServiceRole11EF7C63",
+            "data": "andriitestcdkclusterDefaultVpcC6C89646",
             "trace": [
-              "new Role (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-iam/lib/role.js:35:22)",
-              "new Function (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-lambda/lib/function.js:59:35)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:259:25)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -64,12 +96,19 @@
             ]
           }
         ],
-        "/cdkworkshop/HelloHandler/Resource": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1/Subnet": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "HelloHandler2E4FBA4D",
+            "data": "andriitestcdkclusterDefaultVpcPublicSubnet1Subnet0BE01C5B",
             "trace": [
-              "new Function (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-lambda/lib/function.js:69:26)",
+              "new Subnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:540:24)",
+              "new PublicSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -83,16 +122,19 @@
             ]
           }
         ],
-        "/cdkworkshop/AssetParameters/37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931/S3Bucket": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931S3BucketAA69DD97",
+            "data": "andriitestcdkclusterDefaultVpcPublicSubnet1RouteTable2B47592D",
             "trace": [
-              "new FileAssetParameters (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:11:36)",
-              "Stack.addFileAsset (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/core/lib/stack.js:343:22)",
-              "new Asset (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
-              "AssetCode.bind (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
-              "new Function (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "new Subnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:555:23)",
+              "new PublicSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -106,16 +148,19 @@
             ]
           }
         ],
-        "/cdkworkshop/AssetParameters/37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931/S3VersionKey": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931S3VersionKey1FAC1E15",
+            "data": "andriitestcdkclusterDefaultVpcPublicSubnet1RouteTableAssociationE850C676",
             "trace": [
-              "new FileAssetParameters (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:15:35)",
-              "Stack.addFileAsset (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/core/lib/stack.js:343:22)",
-              "new Asset (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
-              "AssetCode.bind (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
-              "new Function (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "new Subnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:560:9)",
+              "new PublicSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -129,16 +174,16 @@
             ]
           }
         ],
-        "/cdkworkshop/AssetParameters/37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931/ArtifactHash": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters37966b8a9595e568ac5e3e185e2f1cff2f2959574d66a95e92dcfae7b6761931ArtifactHash8E75A43E",
+            "data": "andriitestcdkclusterDefaultVpcPublicSubnet1DefaultRouteB5EF537B",
             "trace": [
-              "new FileAssetParameters (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:19:38)",
-              "Stack.addFileAsset (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/core/lib/stack.js:343:22)",
-              "new Asset (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
-              "AssetCode.bind (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
-              "new Function (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "PublicSubnet.addDefaultInternetRoute (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:580:23)",
+              "Vpc.publicSubnets.forEach.publicSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:290:30)",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:289:32)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -152,13 +197,16 @@
             ]
           }
         ],
-        "/cdkworkshop/Endpoint/Resource": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1/EIP": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointEEF1FD8F",
+            "data": "andriitestcdkclusterDefaultVpcPublicSubnet1EIPCF314A1E",
             "trace": [
-              "new RestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:28:26)",
-              "new LambdaRestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:17:9)",
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:701:27)",
+              "NatGateway.configureNat (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/nat.js:52:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -172,15 +220,16 @@
             ]
           }
         ],
-        "/cdkworkshop/Endpoint/Deployment/Resource": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet1/NATGateway": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointDeployment318525DA6e6bb40c1d6561ba7c15aba7abb291aa",
+            "data": "andriitestcdkclusterDefaultVpcPublicSubnet1NATGatewayF2310259",
             "trace": [
-              "new Deployment (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/deployment.js:39:25)",
-              "LambdaRestApi.configureDeployment (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:164:38)",
-              "new RestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:42:14)",
-              "new LambdaRestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:17:9)",
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:699:21)",
+              "NatGateway.configureNat (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/nat.js:52:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -194,15 +243,19 @@
             ]
           }
         ],
-        "/cdkworkshop/Endpoint/DeploymentStage.prod/Resource": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2/Subnet": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointDeploymentStageprodB78BEEA0",
+            "data": "andriitestcdkclusterDefaultVpcPublicSubnet2SubnetEC0A2CEE",
             "trace": [
-              "new Stage (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/stage.js:27:26)",
-              "LambdaRestApi.configureDeployment (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:172:36)",
-              "new RestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:42:14)",
-              "new LambdaRestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:17:9)",
+              "new Subnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:540:24)",
+              "new PublicSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -216,14 +269,19 @@
             ]
           }
         ],
-        "/cdkworkshop/Endpoint/Endpoint": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "Endpoint8024A810",
+            "data": "andriitestcdkclusterDefaultVpcPublicSubnet2RouteTableA3B76B64",
             "trace": [
-              "LambdaRestApi.configureDeployment (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:173:13)",
-              "new RestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:42:14)",
-              "new LambdaRestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:17:9)",
+              "new Subnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:555:23)",
+              "new PublicSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -237,15 +295,19 @@
             ]
           }
         ],
-        "/cdkworkshop/Endpoint/CloudWatchRole/Resource": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointCloudWatchRoleC3C64E0F",
+            "data": "andriitestcdkclusterDefaultVpcPublicSubnet2RouteTableAssociationC07F9998",
             "trace": [
-              "new Role (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-iam/lib/role.js:35:22)",
-              "LambdaRestApi.configureCloudWatchRole (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:182:22)",
-              "new RestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:45:18)",
-              "new LambdaRestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:17:9)",
+              "new Subnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:560:9)",
+              "new PublicSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:690:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:469:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -259,14 +321,16 @@
             ]
           }
         ],
-        "/cdkworkshop/Endpoint/Account": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointAccountB8304247",
+            "data": "andriitestcdkclusterDefaultVpcPublicSubnet2DefaultRouteC80C4C0A",
             "trace": [
-              "LambdaRestApi.configureCloudWatchRole (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:186:26)",
-              "new RestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:45:18)",
-              "new LambdaRestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:17:9)",
+              "PublicSubnet.addDefaultInternetRoute (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:580:23)",
+              "Vpc.publicSubnets.forEach.publicSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:290:30)",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:289:32)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -280,15 +344,16 @@
             ]
           }
         ],
-        "/cdkworkshop/Endpoint/Default/{proxy+}/Resource": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2/EIP": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "Endpointproxy39E2174E",
+            "data": "andriitestcdkclusterDefaultVpcPublicSubnet2EIPD77912AE",
             "trace": [
-              "new Resource (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:170:26)",
-              "new ProxyResource (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:201:9)",
-              "RootResource.addProxy (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:20:16)",
-              "new LambdaRestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:19:23)",
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:701:27)",
+              "NatGateway.configureNat (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/nat.js:52:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -302,21 +367,16 @@
             ]
           }
         ],
-        "/cdkworkshop/Endpoint/Default/{proxy+}/ANY/ApiPermission.cdkworkshopEndpointBFC3A9DC.ANY..{proxy+}": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PublicSubnet2/NATGateway": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointproxyANYApiPermissioncdkworkshopEndpointBFC3A9DCANYproxy8912C483",
+            "data": "andriitestcdkclusterDefaultVpcPublicSubnet2NATGateway7EB72170",
             "trace": [
-              "Function.addPermission (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:21:9)",
-              "LambdaIntegration.bind (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:30:22)",
-              "Method.renderIntegration (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/method.js:75:21)",
-              "Method.renderIntegration (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/method.js:70:29)",
-              "new Method (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/method.js:27:31)",
-              "ProxyResource.addMethod (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:17:16)",
-              "ProxyResource.addMethod (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:221:22)",
-              "new ProxyResource (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:209:35)",
-              "RootResource.addProxy (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:20:16)",
-              "new LambdaRestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:19:23)",
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:699:21)",
+              "NatGateway.configureNat (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/nat.js:52:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -330,21 +390,19 @@
             ]
           }
         ],
-        "/cdkworkshop/Endpoint/Default/{proxy+}/ANY/ApiPermission.Test.cdkworkshopEndpointBFC3A9DC.ANY..{proxy+}": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet1/Subnet": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointproxyANYApiPermissionTestcdkworkshopEndpointBFC3A9DCANYproxyED76C669",
+            "data": "andriitestcdkclusterDefaultVpcPrivateSubnet1Subnet1C698E2E",
             "trace": [
-              "Function.addPermission (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:21:9)",
-              "LambdaIntegration.bind (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:37:26)",
-              "Method.renderIntegration (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/method.js:75:21)",
-              "Method.renderIntegration (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/method.js:70:29)",
-              "new Method (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/method.js:27:31)",
-              "ProxyResource.addMethod (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:17:16)",
-              "ProxyResource.addMethod (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:221:22)",
-              "new ProxyResource (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:209:35)",
-              "RootResource.addProxy (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:20:16)",
-              "new LambdaRestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:19:23)",
+              "new Subnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:540:24)",
+              "new PrivateSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -358,17 +416,19 @@
             ]
           }
         ],
-        "/cdkworkshop/Endpoint/Default/{proxy+}/ANY/Resource": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet1/RouteTable": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointproxyANYC09721C5",
+            "data": "andriitestcdkclusterDefaultVpcPrivateSubnet1RouteTable8E53ACD7",
             "trace": [
-              "new Method (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
-              "ProxyResource.addMethod (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:17:16)",
-              "ProxyResource.addMethod (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:221:22)",
-              "new ProxyResource (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:209:35)",
-              "RootResource.addProxy (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:20:16)",
-              "new LambdaRestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:19:23)",
+              "new Subnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:555:23)",
+              "new PrivateSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -382,21 +442,19 @@
             ]
           }
         ],
-        "/cdkworkshop/Endpoint/Default/ANY/ApiPermission.cdkworkshopEndpointBFC3A9DC.ANY..": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet1/RouteTableAssociation": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointANYApiPermissioncdkworkshopEndpointBFC3A9DCANY43DD0A14",
+            "data": "andriitestcdkclusterDefaultVpcPrivateSubnet1RouteTableAssociation25DC0A88",
             "trace": [
-              "Function.addPermission (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:21:9)",
-              "LambdaIntegration.bind (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:30:22)",
-              "Method.renderIntegration (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/method.js:75:21)",
-              "Method.renderIntegration (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/method.js:70:29)",
-              "new Method (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/method.js:27:31)",
-              "RootResource.addMethod (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:17:16)",
-              "ProxyResource.addMethod (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:218:37)",
-              "new ProxyResource (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:209:35)",
-              "RootResource.addProxy (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:20:16)",
-              "new LambdaRestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:19:23)",
+              "new Subnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:560:9)",
+              "new PrivateSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -410,21 +468,17 @@
             ]
           }
         ],
-        "/cdkworkshop/Endpoint/Default/ANY/ApiPermission.Test.cdkworkshopEndpointBFC3A9DC.ANY..": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet1/DefaultRoute": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointANYApiPermissionTestcdkworkshopEndpointBFC3A9DCANY2962C18A",
+            "data": "andriitestcdkclusterDefaultVpcPrivateSubnet1DefaultRoute4FB1DF69",
             "trace": [
-              "Function.addPermission (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:21:9)",
-              "LambdaIntegration.bind (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:37:26)",
-              "Method.renderIntegration (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/method.js:75:21)",
-              "Method.renderIntegration (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/method.js:70:29)",
-              "new Method (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/method.js:27:31)",
-              "RootResource.addMethod (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:17:16)",
-              "ProxyResource.addMethod (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:218:37)",
-              "new ProxyResource (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:209:35)",
-              "RootResource.addProxy (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:20:16)",
-              "new LambdaRestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:19:23)",
+              "PrivateSubnet.addRoute (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:23)",
+              "NatGateway.configureSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/nat.js:63:16)",
+              "NatGateway.configureNat (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/nat.js:57:18)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
@@ -438,21 +492,767 @@
             ]
           }
         ],
-        "/cdkworkshop/Endpoint/Default/ANY/Resource": [
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet2/Subnet": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointANY485C938B",
+            "data": "andriitestcdkclusterDefaultVpcPrivateSubnet2Subnet358140D5",
             "trace": [
-              "new Method (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
-              "RootResource.addMethod (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:17:16)",
-              "ProxyResource.addMethod (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:218:37)",
-              "new ProxyResource (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:209:35)",
-              "RootResource.addProxy (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:20:16)",
-              "new LambdaRestApi (/tmp/jsii-kernel-dMJumF/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:19:23)",
+              "new Subnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:540:24)",
+              "new PrivateSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
               "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
               "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
               "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
               "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterDefaultVpcPrivateSubnet2RouteTable1FA1FAD1",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:555:23)",
+              "new PrivateSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterDefaultVpcPrivateSubnet2RouteTableAssociationEB170F2F",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:560:9)",
+              "new PrivateSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:717:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:474:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:453:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:449:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:279:14)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterDefaultVpcPrivateSubnet2DefaultRoute0BACBF87",
+            "trace": [
+              "PrivateSubnet.addRoute (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:23)",
+              "NatGateway.configureSubnet (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/nat.js:63:16)",
+              "NatGateway.configureNat (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/nat.js:57:18)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:18)",
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:295:22)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterDefaultVpcIGWE95C7D28",
+            "trace": [
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:283:25)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/DefaultVpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterDefaultVpcVPCGWFCB49DFB",
+            "trace": [
+              "new Vpc (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:285:25)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:40:33)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/ClusterRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterClusterRole2C54D79C",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-iam/lib/role.js:35:22)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:43:35)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/ControlPlaneSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterControlPlaneSecurityGroup630E4DAE",
+            "trace": [
+              "new SecurityGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:131:30)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:50:54)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/ControlPlaneSecurityGroup/from cdkworkshopandriitestcdkclusterfrontendnodesInstanceSecurityGroupF972C617:443": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterControlPlaneSecurityGroupfromcdkworkshopandriitestcdkclusterfrontendnodesInstanceSecurityGroupF972C617443CFF56A15",
+            "trace": [
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:33:13)",
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:177:19)",
+              "other.connections._securityGroupRules.forEachAndForever.rule (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:89:31)",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "_securityGroups.forEachAndForever.securityGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:88:51)",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "Connections.allowFrom (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:87:30)",
+              "Connections.allowTo (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:72:31)",
+              "Cluster.addAutoScalingGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:182:38)",
+              "Cluster.addCapacity (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:148:14)",
+              "_wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:51)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "ret._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:25)",
+              "Kernel._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8197:20)",
+              "Kernel.invoke (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7587:26)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/Resource/ResourceHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterResourceHandlerServiceRoleF8722E30",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-iam/lib/role.js:35:22)",
+              "new Function (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/function.js:59:35)",
+              "new ClusterResource (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster-resource.js:24:25)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:73:24)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/Resource/ResourceHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterResourceHandlerServiceRoleDefaultPolicyE30665F1",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-iam/lib/policy.js:29:26)",
+              "Role.addToPolicy (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-iam/lib/role.js:153:34)",
+              "Function.addToRolePolicy (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:37:19)",
+              "new ClusterResource (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster-resource.js:36:17)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:73:24)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/Resource/ResourceHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterResourceHandler325E7954",
+            "trace": [
+              "new Function (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/function.js:69:26)",
+              "new ClusterResource (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster-resource.js:24:25)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:73:24)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/Resource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterB50B650B",
+            "trace": [
+              "new CustomResource (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-cloudformation/lib/custom-resource.js:56:25)",
+              "new ClusterResource (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster-resource.js:46:26)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:73:24)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/KubernetesResourceHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterKubernetesResourceHandlerA4A5AF7E",
+            "trace": [
+              "new Function (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/function.js:69:26)",
+              "Cluster.createKubernetesResourceHandler (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:259:16)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:96:41)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/ConfigCommand": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterConfigCommand008D5CD0",
+            "trace": [
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:117:13)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/GetTokenCommand": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterGetTokenCommand1494FC90",
+            "trace": [
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:118:13)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/InstanceSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterfrontendnodesInstanceSecurityGroup95373D4D",
+            "trace": [
+              "new SecurityGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:131:30)",
+              "new AutoScalingGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:92:30)",
+              "Cluster.addCapacity (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:144:21)",
+              "_wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:51)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "ret._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:25)",
+              "Kernel._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8197:20)",
+              "Kernel.invoke (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7587:26)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/InstanceSecurityGroup/from cdkworkshopandriitestcdkclusterfrontendnodesInstanceSecurityGroupF972C617:ALL TRAFFIC": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterfrontendnodesInstanceSecurityGroupfromcdkworkshopandriitestcdkclusterfrontendnodesInstanceSecurityGroupF972C617ALLTRAFFICBDA8231E",
+            "trace": [
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:33:13)",
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:177:19)",
+              "_securityGroupRules.forEachAndForever.rule (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:108:31)",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "_securityGroups.forEachAndForever.securityGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:107:38)",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "Connections.allowInternally (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:106:30)",
+              "Cluster.addAutoScalingGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:177:38)",
+              "Cluster.addCapacity (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:148:14)",
+              "_wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:51)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "ret._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:25)",
+              "Kernel._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8197:20)",
+              "Kernel.invoke (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7587:26)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/InstanceSecurityGroup/from cdkworkshopandriitestcdkclusterControlPlaneSecurityGroup8F828931:443": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterfrontendnodesInstanceSecurityGroupfromcdkworkshopandriitestcdkclusterControlPlaneSecurityGroup8F8289314439702443D",
+            "trace": [
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:33:13)",
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:177:19)",
+              "other.connections._securityGroupRules.forEachAndForever.rule (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:89:31)",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "_securityGroups.forEachAndForever.securityGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:88:51)",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "Connections.allowFrom (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:87:30)",
+              "Cluster.addAutoScalingGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:179:38)",
+              "Cluster.addCapacity (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:148:14)",
+              "_wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:51)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "ret._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:25)",
+              "Kernel._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8197:20)",
+              "Kernel.invoke (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7587:26)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/InstanceSecurityGroup/from cdkworkshopandriitestcdkclusterControlPlaneSecurityGroup8F828931:1025-65535": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterfrontendnodesInstanceSecurityGroupfromcdkworkshopandriitestcdkclusterControlPlaneSecurityGroup8F82893110256553599519AC0",
+            "trace": [
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:33:13)",
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:177:19)",
+              "other.connections._securityGroupRules.forEachAndForever.rule (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:89:31)",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "_securityGroups.forEachAndForever.securityGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:88:51)",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:191:13)",
+              "Connections.allowFrom (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ec2/lib/connections.js:87:30)",
+              "Cluster.addAutoScalingGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:180:38)",
+              "Cluster.addCapacity (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:148:14)",
+              "_wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:51)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "ret._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:25)",
+              "Kernel._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8197:20)",
+              "Kernel.invoke (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7587:26)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterfrontendnodesInstanceRole10A6DB3D",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-iam/lib/role.js:35:22)",
+              "new AutoScalingGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:99:35)",
+              "Cluster.addCapacity (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:144:21)",
+              "_wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:51)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "ret._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:25)",
+              "Kernel._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8197:20)",
+              "Kernel.invoke (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7587:26)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterfrontendnodesInstanceProfile4F8B13C8",
+            "trace": [
+              "new AutoScalingGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:104:28)",
+              "Cluster.addCapacity (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:144:21)",
+              "_wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:51)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "ret._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:25)",
+              "Kernel._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8197:20)",
+              "Kernel.invoke (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7587:26)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/LaunchConfig": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterfrontendnodesLaunchConfig2AE09257",
+            "trace": [
+              "new AutoScalingGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:112:30)",
+              "Cluster.addCapacity (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:144:21)",
+              "_wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:51)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "ret._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:25)",
+              "Kernel._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8197:20)",
+              "Kernel.invoke (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7587:26)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/frontend-nodes/ASG": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterfrontendnodesASGB47ADD83",
+            "trace": [
+              "new AutoScalingGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:185:33)",
+              "Cluster.addCapacity (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:144:21)",
+              "_wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:51)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "ret._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:25)",
+              "Kernel._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8197:20)",
+              "Kernel.invoke (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7587:26)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/andrii_test_cdk_cluster/AwsAuth/manifest/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "andriitestcdkclusterAwsAuthmanifest9764B19D",
+            "trace": [
+              "new CustomResource (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-cloudformation/lib/custom-resource.js:56:25)",
+              "new KubernetesResource (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/k8s-resource.js:22:9)",
+              "new AwsAuth (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/aws-auth.js:17:9)",
+              "Cluster.get awsAuth [as awsAuth] (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:238:29)",
+              "Cluster.addAutoScalingGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:210:18)",
+              "Cluster.addCapacity (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:148:14)",
+              "_wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:51)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "ret._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:25)",
+              "Kernel._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8197:20)",
+              "Kernel.invoke (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7587:26)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/kubectl-layer-8C2542BC-BF2B-4DFE-B765-E181FD30A9A0/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "kubectllayer8C2542BCBF2B4DFEB765E181FD30A9A0617C4ADA",
+            "trace": [
+              "new KubectlLayer (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/kubectl-layer.js:22:26)",
+              "Function.getOrCreate (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/kubectl-layer.js:46:16)",
+              "new ClusterResource (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster-resource.js:30:51)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:73:24)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/AssetParameters/ea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204S3Bucket371D99F8",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:11:36)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/core/lib/stack.js:343:22)",
+              "new Asset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "new ClusterResource (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster-resource.js:24:25)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:73:24)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/AssetParameters/ea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204S3VersionKeyFDCB25DD",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:15:35)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/core/lib/stack.js:343:22)",
+              "new Asset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "new ClusterResource (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster-resource.js:24:25)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:73:24)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/AssetParameters/ea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersea4957b16062595851e7d293ee45835db05c5693669a729cc02944b6ad19a204ArtifactHashB80B497F",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:19:38)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/core/lib/stack.js:343:22)",
+              "new Asset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "new ClusterResource (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster-resource.js:24:25)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:73:24)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/AssetParameters/640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444S3Bucket919126CB",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:11:36)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/core/lib/stack.js:343:22)",
+              "new Asset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "Cluster.createKubernetesResourceHandler (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:259:16)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:96:41)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/AssetParameters/640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444S3VersionKey529BEF54",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:15:35)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/core/lib/stack.js:343:22)",
+              "new Asset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "Cluster.createKubernetesResourceHandler (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:259:16)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:96:41)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/AssetParameters/640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters640847533c8a00b3133aeb128edcac41fb7b60349c9e18764fcf7ea4af14d444ArtifactHash606C8127",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:19:38)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/core/lib/stack.js:343:22)",
+              "new Asset (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-lambda/lib/function.js:67:33)",
+              "Cluster.createKubernetesResourceHandler (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:259:16)",
+              "new Cluster (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:96:41)",
+              "obj._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:49)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "Kernel._create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7761:26)",
+              "Kernel.create (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7508:21)",
+              "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
+              "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
+              "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
+              "runCallback (timers.js:810:20)",
+              "tryOnImmediate (timers.js:768:5)",
+              "processImmediate [as _immediateCallback] (timers.js:745:5)"
+            ]
+          }
+        ],
+        "/cdkworkshop/SsmParameterValue:--aws--service--eks--optimized-ami--1.14--amazon-linux-2--recommended--image_id:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceeksoptimizedami114amazonlinux2recommendedimageidC96584B6F00A464EAD1953AFF4B05118Parameter",
+            "trace": [
+              "Function.fromStringParameterAttributes (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ssm/lib/parameter.js:104:15)",
+              "Function.valueForTypedStringParameter (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ssm/lib/parameter.js:171:21)",
+              "Function.valueForStringParameter (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-ssm/lib/parameter.js:155:32)",
+              "EksOptimizedImage.getImage (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:333:41)",
+              "new AutoScalingGroup (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:108:48)",
+              "Cluster.addCapacity (/tmp/jsii-kernel-rLCFeF/node_modules/@aws-cdk/aws-eks/lib/cluster.js:144:21)",
+              "_wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:51)",
+              "Kernel._wrapSandboxCode (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8221:20)",
+              "ret._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7588:25)",
+              "Kernel._ensureSync (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8197:20)",
+              "Kernel.invoke (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7587:26)",
               "KernelHost.processRequest (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7296:28)",
               "KernelHost.run (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:14)",
               "Immediate.setImmediate (/home/atym/Envs/platform36/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7239:37)",
@@ -488,6 +1288,10 @@
       "@aws-cdk/aws-certificatemanager": "1.19.0",
       "@aws-cdk/aws-elasticloadbalancingv2": "1.19.0",
       "@aws-cdk/aws-apigateway": "1.19.0",
+      "@aws-cdk/aws-autoscaling-common": "1.19.0",
+      "@aws-cdk/aws-elasticloadbalancing": "1.19.0",
+      "@aws-cdk/aws-autoscaling": "1.19.0",
+      "@aws-cdk/aws-eks": "1.19.0",
       "jsii-runtime": "Python/3.6.4"
     }
   }
